@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon" parallel="tests" thread-count="2">
+
+	<listeners>
+		<listener class-name="testPackage.ListenerTest" />
+	</listeners>
+
+	<test name="TestNGonFirefox" allow-return-values="true">
+		<parameter name="browsername" value="firefox"></parameter>
+		<classes>
+			<class name="testPackage.TestClass" />
+		</classes>
+	</test>
+
+
+	 <!-- <test name="TestNGonChrome" allow-return-values="true">
+
+		<parameter name="browsername" value="chrome"></parameter>
+		<classes>
+			<class name="testPackage.TestClass" />
+		</classes>
+	</test>  -->
+
+
+
+
+
+</suite>
